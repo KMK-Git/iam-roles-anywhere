@@ -1,3 +1,4 @@
+```
 .
 ├── certificate_authority.conf  # Configuration for certificate authority certificate
 ├── cleanup.sh  # Cleanup script, deleted created resources and files
@@ -9,3 +10,4 @@
 ├── License  # License file
 ├── README.md  # This file
 └── roles_anywhere.sh  # Script used to create AWS resources and test credentials generation
+```
