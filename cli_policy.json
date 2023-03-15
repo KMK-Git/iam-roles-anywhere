@@ -1,0 +1,28 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "IAM",
+            "Effect": "Allow",
+            "Action": [
+                "iam:PassRole",
+                "iam:CreateRole",
+                "iam:DeleteRole"
+            ],
+            "Resource": "arn:aws:iam::*:role/demo-rolesanywhere"
+        },
+        {
+            "Sid": "RolesAnywhere",
+            "Effect": "Allow",
+            "Action": [
+                "rolesanywhere:DeleteTrustAnchor",
+                "rolesanywhere:ListProfiles",
+                "rolesanywhere:DeleteProfile",
+                "rolesanywhere:ListTrustAnchors",
+                "rolesanywhere:CreateTrustAnchor",
+                "rolesanywhere:CreateProfile"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
